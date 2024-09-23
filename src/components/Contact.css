@@ -1,0 +1,100 @@
+/* Contact.css */
+
+/* Background styling with a soft gradient */
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, hwb(210 0% 92%) 0%, #141010 100%); /* Soft blue gradient */
+  padding: 20px;
+}
+
+.contact-title {
+  font-size: 3rem;
+  color: hsl(295, 94%, 20%);
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive; /* Change to a cursive font */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-description {
+  color: hwb(192 7% 5%);
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 600px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Form styling */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(160, 40, 40, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-emphasis: none;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: hsl(209, 50%, 76%);
+  box-shadow: 0 0 10px rgba(11, 119, 197, 0.2);
+}
+
+.submit-button {
+  background-color: rgb(5, 33, 56);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: hsl(239, 73%, 49%);
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2.5rem;
+    text-emphasis: none;
+  }
+
+  .contact-form {
+    padding: 30px;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+  }
+}

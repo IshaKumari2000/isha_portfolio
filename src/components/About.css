@@ -1,0 +1,81 @@
+/* Skills Section Styling */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  color: hwb(300 91% 8%);
+  margin-bottom: 40px;
+}
+
+/* Center the card container and align all cards */
+.skills-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 cards per row */
+  grid-gap: 20px;
+  justify-content: center; /* Center all rows */
+  justify-items: center; /* Center each card horizontally */
+  max-width: 800px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container within its parent */
+}
+
+.skill-card {
+  background-color: #007bff;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer; /* Make the card clickable */
+  color: white;
+}
+
+/* Hover effect */
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Change color on click */
+.skill-card:hover {
+  border: 1px solid gray;
+  background-color: #eeeeee;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Icon Styling */
+.skill-icon {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Adjust for clicked icon color */
+.skill-card.skill-card:hover .skill-icon {
+  color: black;
+}
+
+.skill-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design for Cards Layout */
+@media (max-width: 768px) {
+  .skills-card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for smaller screens */
+    justify-content: center; /* Ensure center alignment remains */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-card-container {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    justify-content: center; /* Ensure center alignment remains */
+  }
+}

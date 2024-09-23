@@ -1,0 +1,59 @@
+/* Home.css */
+
+/* Change the background color here */
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(189, 87%, 3%); /* Change this color to whatever you prefer */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Hero content styling */
+  .hero-content {
+    text-align: center;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: 
+    hsl(313, 90%, 51%);
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: hsl(197, 95%, 49%);
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .resume-button {
+    margin-left: 10px; /* Add gap between the buttons */
+  }
+  
